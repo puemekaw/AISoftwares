@@ -1,0 +1,146 @@
+SoftwareType
+{
+    Name            "Language Learning Model"
+    Description     "Advanced AI models designed for understanding and generating human language."
+    IdealPrice      150
+    OptimalDevTime  60
+    Random          0.7
+    OneClient       False
+    InHouse         True
+    Popularity      1
+    Retention       75
+    Iterative       1
+    SubmarketNames  [ Accuracy; Efficiency; Capability ]
+    NameGenerator   llmGen
+    Features
+            [
+            {
+            Name            "Core"
+            Spec            System
+            DevTime         5
+            CodeArt         1
+            Submarkets      [ 1; 1; 1 ]
+            Features
+                    [
+                    {
+                        Name            "Tokenization"
+                        Description     "Breaking text into manageable pieces."
+                        DevTime         3
+                        Level           1
+                        CodeArt         1
+                        Submarkets      [ 1; 0; 0 ]
+                    }
+                    {
+                        Name            "Embedding"
+                        Description     "Converting text into numerical vectors."
+                        DevTime         5
+                        Level           1
+                        CodeArt         1
+                        Submarkets      [ 0; 1; 0 ]
+                    }
+                    {
+                        Name            "Attention Mechanism"
+                        Description     "Mechanism to focus on important parts of the text."
+                        DevTime         6
+                        Level           2
+                        CodeArt         1
+                        Submarkets      [ 0; 0; 1 ]
+                    }
+                    {
+                        Name            "Transformer Architecture"
+                        Description     "Core architecture for processing text."
+                        DevTime         8
+                        Level           2
+                        CodeArt         1
+                        Submarkets      [ 1; 1; 0 ]
+                    }
+                    {
+                        Name            "Pretraining"
+                        Description     "Training on a large corpus of text."
+                        DevTime         10
+                        Level           3
+                        CodeArt         1
+                        Submarkets      [ 1; 0; 1 ]
+                    }
+                    {
+                        Name            "Fine-Tuning"
+                        Description     "Adjusting the model for specific tasks."
+                        DevTime         7
+                        Level           3
+                        CodeArt         1
+                        Submarkets      [ 0; 1; 1 ]
+                    }
+                    {
+                        Name            "Inference Optimization"
+                        Description     "Improving model efficiency during prediction."
+                        DevTime         6
+                        Level           2
+                        CodeArt         1
+                        Submarkets      [ 1; 1; 0 ]
+                    }
+                    {
+                        Name            "Context Management"
+                        Description     "Handling long-term dependencies in text."
+                        DevTime         5
+                        Level           2
+                        CodeArt         1
+                        Submarkets      [ 0; 0; 1 ]
+                    }
+                    {
+                        Name            "Multilingual Support"
+                        Description     "Supporting multiple languages."
+                        DevTime         8
+                        Level           3
+                        CodeArt         1
+                        Submarkets      [ 1; 0; 1 ]
+                    }
+                    {
+                        Name            "Bias Mitigation"
+                        Description     "Reducing biases in generated text."
+                        DevTime         7
+                        Level           3
+                        CodeArt         1
+                        Submarkets      [ 0; 1; 1 ]
+                    }
+                    ]
+            }
+            {
+            Name            "Deployment"
+            Spec            Network
+            Unlock          2022
+            DevTime         2
+            CodeArt         1
+            Optional        True
+            Submarkets      [ 1; 1; 0 ]
+            Server          0.005
+            Features
+                    [
+                    {
+                        Name            "Cloud Integration"
+                        DevTime         6
+                        Level           3
+                        CodeArt         1
+                        Submarkets      [ 1; 1; 0 ]
+                        Server          0.002
+                        Script_EndOfDay "Product.Bugs = Max(0, Product.Bugs - Product.Userbase * 0.02);"
+                    }
+                    {
+                        Name            "API Support"
+                        DevTime         5
+                        Level           2
+                        CodeArt         1
+                        Submarkets      [ 1; 0; 1 ]
+                        Server          0.003
+                    }
+                    {
+                        Name            "Scalability"
+                        DevTime         7
+                        Level           3
+                        CodeArt         1
+                        Submarkets      [ 0; 1; 1 ]
+                        Server          0.004
+                    }
+                    ]
+            }
+            ]
+}

@@ -1,0 +1,36 @@
+-start(base)
+Intelligent
+Smart
+Advanced
+Cognitive
+Linguistic
+AI
+Neural
+Text
+Language
+Verbal
+Grammar
+Syntax
+Comprehension
+Context
+Dialogue
+Communication
+Semantic
+Prose
+Discourse
+Lingo
+Vocab
+Lexicon
+Parsing
+Analysis
+Inference
+-base(end,stop)
+Model
+Processor
+Engine
+System
+-end(stop)
+ Suite
+ Premium
+ Pro
+ Plus
